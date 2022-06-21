@@ -86,7 +86,7 @@
 
 # MAGIC %md
 # MAGIC 
-# MAGIC ###How does CDC tools like Debezium output looks like?
+# MAGIC ###How does CDC tools like Qlik Replicate and Debezium output looks like?
 # MAGIC 
 # MAGIC A json message describing the changed data has interesting fields similar to the list below: 
 # MAGIC 

@@ -63,3 +63,21 @@ except:
 # COMMAND ----------
 
 spark.read.json(folder+"/customers").display()
+
+# COMMAND ----------
+
+df = spark.read.json(folder+"/customers")
+
+# COMMAND ----------
+
+df.display()
+
+# COMMAND ----------
+
+# DBTITLE 1,Basic Check: Null Values
+for column in df.columns:
+  print(f"{column} - nulls: " + str(df.filter(f"{column} is NULL").count()))
+
+# COMMAND ----------
+
+
